@@ -1,12 +1,10 @@
-﻿
-
-using NetBlaze.SharedKernel.Dtos.RegisterAndLoginDTOs.Request;
-using NetBlaze.SharedKernel.Dtos.RegisterAndLoginDTOs.Response;
+﻿using NetBlaze.SharedKernel.Dtos.RegisterAndLoginDTOs.Response;
 using NetBlaze.SharedKernel.Dtos.ResetPasswordDTOs.Response;
 using NetBlaze.SharedKernel.Dtos.ResetPasswordDTOs.Request;
 using NetBlaze.SharedKernel.HelperUtilities.General;
 using NetBlaze.SharedKernel.Dtos.UserDTOs.Response;
 using NetBlaze.SharedKernel.Dtos.UserDTOs.Request;
+using NetBlaze.SharedKernel.Dtos.RegisterAndLoginDTOs.Request;
 
 namespace NetBlaze.Application.Interfaces.ServicesInterfaces
 {

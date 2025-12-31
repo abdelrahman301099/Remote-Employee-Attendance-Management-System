@@ -1,6 +1,4 @@
-﻿
-
-using NetBlaze.SharedKernel.HelperUtilities.Constants;
+﻿using NetBlaze.SharedKernel.HelperUtilities.Constants;
 using NetBlaze.SharedKernel.SharedResources;
 using System.ComponentModel.DataAnnotations;
 
