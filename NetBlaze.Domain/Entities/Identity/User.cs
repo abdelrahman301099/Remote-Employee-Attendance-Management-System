@@ -6,34 +6,35 @@ namespace NetBlaze.Domain.Entities.Identity
     {
         // Properties
 
-        public string DisplayName { get; private set; } = null!;
+        public string DisplayName { get;  set; } = null!;
 
-        public DateTimeOffset CreatedAt { get; private set; }
+        public DateTimeOffset CreatedAt { get;  set; }
 
-        public string? CreatedBy { get; private set; }
+        public string? CreatedBy { get;  set; }
 
-        public DateTimeOffset? LastModifiedAt { get; private set; }
+        public DateTimeOffset? LastModifiedAt { get;  set; }
 
-        public string? LastModifiedBy { get; private set; }
+        public string? LastModifiedBy { get;  set; }
 
-        public DateTimeOffset? DeletedAt { get; private set; }
+        public DateTimeOffset? DeletedAt { get; set; }
 
-        public string? DeletedBy { get; private set; }
+        public string? DeletedBy { get; set; }
 
-        public bool IsActive { get; private set; } = true;
+        public bool IsActive { get; set; } = true;
 
-        public bool IsDeleted { get; private set; }
+        public bool IsDeleted { get; set; }
+
 
 
         // Navigational Properties
 
-        public ICollection<UserRole> UserRoles { get; private set; } = [];
+        public ICollection<UserRole> UserRoles { get; set; } = [];
 
-        public int? DepartmentId { get; private set; }
-        public virtual Department? Department { get; private set; }
-        public virtual ICollection<AttendanceLog> AttendanceLogs { get; private set; } = [];
-        public virtual ICollection<FidoCredential> FidoCredentials { get; private set; } = [];
-        public virtual ICollection<RandomAttendanceCheck> RandomAttendanceChecks { get; private set; } = [];
-        public virtual ICollection<UserAttendancePolicy> UserAttendancePolicies { get; private set; } = [];
+        public int? DepartmentId { get; set; }
+        public virtual Department? Department { get; set; }
+        public virtual ICollection<AttendanceLog> AttendanceLogs { get; set; } = [];
+        public virtual ICollection<FidoCredential> FidoCredentials { get; set; } = [];
+        public virtual ICollection<RandomAttendanceCheck> RandomAttendanceChecks { get; set; } = [];
+        public virtual ICollection<UserAttendancePolicy> UserAttendancePolicies { get; set; } = [];
     }
 }

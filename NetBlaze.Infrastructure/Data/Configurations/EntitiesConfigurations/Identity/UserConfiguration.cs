@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using NetBlaze.Domain.Entities.Identity;
 using NetBlaze.SharedKernel.HelperUtilities.Constants;
@@ -13,17 +14,17 @@ namespace NetBlaze.Infrastructure.Data.Configurations.EntitiesConfigurations.Ide
 
             builder
                 .Property(e => e.DisplayName)
-                .HasMaxLength(CommonStringLength.LongText)
+                .HasMaxLength(CommonStringLength.MediumText)
                 .IsRequired();
 
             builder
                 .Property(e => e.UserName)
-                .HasMaxLength(CommonStringLength.LongText)
+                .HasMaxLength(CommonStringLength.MediumText)
                 .IsRequired();
 
             builder
                 .Property(e => e.NormalizedUserName)
-                .HasMaxLength(CommonStringLength.LongText)
+                .HasMaxLength(CommonStringLength.MediumText)
                 .IsRequired();
 
             builder
@@ -32,7 +33,7 @@ namespace NetBlaze.Infrastructure.Data.Configurations.EntitiesConfigurations.Ide
 
             builder
                 .Property(e => e.Email)
-                .HasMaxLength(CommonStringLength.LongContentText)
+                .HasMaxLength(CommonStringLength.MediumText)
                 .IsRequired();
 
             builder
@@ -41,7 +42,7 @@ namespace NetBlaze.Infrastructure.Data.Configurations.EntitiesConfigurations.Ide
 
             builder
                 .Property(e => e.NormalizedEmail)
-                .HasMaxLength(CommonStringLength.LongContentText)
+                .HasMaxLength(CommonStringLength.MediumText)
                 .IsRequired();
 
             builder
@@ -78,6 +79,8 @@ namespace NetBlaze.Infrastructure.Data.Configurations.EntitiesConfigurations.Ide
                 .Property(e => e.DeletedBy)
                 .HasMaxLength(CommonStringLength.LongContentText)
                 .IsRequired(false);
+
+           
 
             // Relationships Configurations
 
